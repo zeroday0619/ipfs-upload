@@ -37,11 +37,10 @@
 
     <h3>Upload file to IPFS using Infura Pinning Service and Cloudflare IPFS Gateway</h3>
     <h4>Permanently upload your files to the IPFS network</h4>
-
     <input type="file" id="upload">
 
     <div id="link"></div> <!-- markup created after upload -->
-
+    
     <script>
         const ipfs = window.IpfsHttpClient('ipfs.infura.io', '5001', { protocol: 'https' });
 
@@ -63,6 +62,9 @@
             reader.readAsArrayBuffer(this.files[0]);
         })
     </script>
+    <footer>
+        Created by <strong><a href="https://twitter.com/BawAppie">@BawAppie</a></strong> / Powered by <strong><a href="appie.design">Appie.Design</a></strong>
+    </footer>
 
 </body>
 
